@@ -1,0 +1,59 @@
+.projects {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .project-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .project-card {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .modal img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  

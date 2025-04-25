@@ -1,0 +1,32 @@
+.activities {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .activity-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .activity-card {
+    background: #f4f4f4;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .activity-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  

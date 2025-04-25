@@ -1,0 +1,25 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.home-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-content p {
+    font-size: 1rem;
+    color: #444;
+}

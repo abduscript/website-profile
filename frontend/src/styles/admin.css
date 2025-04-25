@@ -1,0 +1,32 @@
+.admin-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .admin-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .admin-tabs button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .admin-tabs button.active,
+  .admin-tabs button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .admin-content {
+    margin-top: 2rem;
+  }
+  
