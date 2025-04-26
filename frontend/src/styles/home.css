@@ -1,6 +1,22 @@
-.container {
-    width: 100%;
-    height: 100%;
+.container, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.section-top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url('../assets/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
 }
 
 .home {
@@ -11,13 +27,18 @@
     align-items: center;
     padding: 2rem;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
-.profile-img {
+.home .profile-img {
     width: 180px;
-    margin-top: 2rem;
+    margin-top: 17rem;
     height: 180px;
-    border-radius: 50%;
+    background: transparent;
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -29,146 +50,9 @@
 
 .home-content p {
     font-size: 1rem;
-    color: #444;
+    color: #fcf947;
 }
 
-/* .job-title {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: bold;
-    overflow: hidden;
-    border-right: 2px solid black;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 6s steps(30, end) infinite, blink 0.5s step-end infinite alternate;
-  }
-  
-  @keyframes typing {
-    0%, 10% {
-      width: 0;
-    }
-    20%, 30% {
-      width: 100%;
-    }
-    40%, 50% {
-      width: 0;
-    }
-    60%, 70% {
-      width: 100%;
-    }
-    80%, 90% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    0%, 100% {
-      border-color: black;
-    }
-    50% {
-      border-color: transparent;
-    }
-  }
-  
-  /* Ganti teks dengan pseudo element */
-  /* .job-title::after {
-    content: "Teacher";
-    animation: words 20s  infinite;
-  }
-  
-  @keyframes words {
-    0%, 20% {
-      content: "Teacher";
-    }
-    21%, 40% {
-      content: "Writer";
-    }
-    41%, 60% {
-      content: "Motivator";
-    }
-    61%, 80% {
-      content: "Entrepreneur";
-    }
-    81%, 100% {
-      content: "Hafiz";
-    }
-  } */
+@media (max-width: 700px) {
 
-  .text-animation span {
-    position: relative;
-}
-
-  .text-animation span::before {
-    content: "Web Developer";
-    color: #fff;
-    animation: words 20s infinite;
-} 
-
-  .text-animation span::after {
-    content: "";
-    background-color: #444;
-    position: absolute;
-    width: calc(100% + 8px);
-    /* height: 100%; */
-    border-left: 3px solid #333;
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-    to{
-        border-left: 2px solid #666;
-    }
-}
-
-@keyframes words {
-    0%,
-    20%{
-        content: "architect";
-    }
-    21%,
-    40%{
-        content: "Lecturer";
-    }
-    41%,
-    60%{
-        content: "Enterpreneur";
-    }
-    61%,
-    80%{
-        content: "Businessman";
-    }
-    81%,
-    100%{
-        content: "Author";
-    }
-}
-
-@keyframes typing {
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-        width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%{
-        width: calc(100% + 8px);
-    }
 }

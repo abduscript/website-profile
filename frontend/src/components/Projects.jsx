@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useState } from 'react';
 import '../styles/projects.css';
-import defaultImg from './default.jpg'
+import defaultImg from '../assets/default.jpg';
 
 
 const projectsData = [
