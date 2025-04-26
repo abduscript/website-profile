@@ -4,7 +4,7 @@ import '../styles/navbar.css';
 function Footer() {
     return (
         <footer className="footer">
-        <p>© 2025 Mack. All rights reserved.</p>
+        <p>© 2025 ITSUKA. All rights reserved.</p>
         </footer>
     );
 }
